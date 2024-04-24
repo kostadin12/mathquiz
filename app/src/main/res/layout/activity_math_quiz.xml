@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_questions"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="-150dp"
+        >
+
+        <TextView
+            android:id="@+id/hearts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Животи:"
+            android:textStyle="bold|italic"
+            android:textColor="#02A502"
+            android:textSize="40sp"
+            />
+
+        <TextView
+            android:id="@+id/livesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hearts"
+            android:layout_marginStart="8dp"
+            android:text="3"
+            android:textSize="40sp"
+            android:textColor="#02A502"
+            android:layout_centerVertical="true"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Резултат: 0"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-80dp"/>
+    <TextView
+        android:id="@+id/multiplierTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Трудност: x1"
+        android:textSize="18sp"
+        android:layout_below="@id/scoreTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-5dp"/>
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Въпрос"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/option1Button"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingVertical="10dp"
+            android:background="@drawable/rounded_textview_background_lightgreen"
+            android:text="Опция 1"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <Button
+            android:id="@+id/option2Button"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingVertical="10dp"
+            android:background="@drawable/rounded_textview_background_lightgreen"
+            android:text="Опция 2"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/option3Button"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingVertical="10dp"
+            android:background="@drawable/rounded_textview_background_lightgreen"
+            android:text="Опция 3"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/option4Button"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingVertical="10dp"
+            android:background="@drawable/rounded_textview_background_lightgreen"
+            android:text="Опция 4"
+            android:textSize="20sp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

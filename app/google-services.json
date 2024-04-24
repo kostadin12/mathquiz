@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "77155159594",
+    "project_id": "mathquizz-d364b",
+    "storage_bucket": "mathquizz-d364b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77155159594:android:4ebfbe8083203c3afafd53",
+        "android_client_info": {
+          "package_name": "com.example.mathquizz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv0OwkZZkpJLoVLu0e3O8t8dCmNmxgUDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77155159594:android:c0f514bb93c5a2a5fafd53",
+        "android_client_info": {
+          "package_name": "com.exapmle.mathquizz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv0OwkZZkpJLoVLu0e3O8t8dCmNmxgUDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

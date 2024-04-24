@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+    <TextView
+        android:text="Регистрация"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_width="330dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_textview_background_white"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center|center_horizontal"
+        android:hint="Потребителско име"
+        android:maxLength="24"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="5dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_textview_background_white"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center|center_horizontal"
+        android:hint="Имейл"
+        android:maxLength="64"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="7dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_textview_background_white"
+        android:ems="10"
+        android:gravity="center|center_horizontal"
+        android:hint="Перола"
+        android:maxLength="32"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:scaleY="1.1"
+        android:layout_marginBottom="10dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/confirm_password"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_textview_background_white"
+        android:ems="10"
+        android:gravity="center|center_horizontal"
+        android:hint="Повтори паролата"
+        android:maxLength="32"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:scaleY="1.1"
+        android:layout_marginBottom="10dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:gravity="center|center_horizontal"
+        android:text="Регистрация"
+        android:textSize="20dp"
+        android:textAlignment="gravity"
+        android:layout_marginBottom="70dp" />
+
+    <TextView
+        android:id="@+id/click_to_login"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_textview_background_darkgreen"
+        android:ems="10"
+        android:gravity="center|center_horizontal"
+        android:text="Отиди при Влизане"
+        android:textColor="@color/white"
+        android:scaleY="1.1"
+        android:layout_marginBottom="1dp" />
+
+</LinearLayout>
